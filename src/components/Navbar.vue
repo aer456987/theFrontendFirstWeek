@@ -6,33 +6,45 @@
     <li class="d-none d-lg-block d-xl-none">lg</li>
     <li class="d-none d-xl-block">xl</li>
   </ul>
-  <nav class="navbar navbar-light bg-white">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
     <div class="container-fluid">
-        <a class="navbar-brand logo" href="#">
-          <img src="@/assets/img/logo.svg" alt="The Frontend 4th" class="w-100">
-        </a>
-        <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <button class="btn btn-warning rounded-pill fw-bold px-md-5 order-2 order-md-3">
-          我要報名
-        </button>
-        <div class="collapse navbar-collapse me-2 order-3 order-md-2"
-          id="navbarSupportedContent">
-          <a class="navbar-brand d-none d-md-inline" href="#">THE F2E</a>
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">關卡任務</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">競賽說明</a>
-            </li>
-          </ul>
+      <h1 class="text-dark">
+        <a class="nav-link active" aria-current="page" href="#">THE F2E</a>
+      </h1>
+
+      <div class="order-2 order-2 order-sm-1 order-lg-2 w-100 w-sm-auto ms-auto ms-lg-0 me-2">
+        <div>
+          <button class="btn btn-secondary px-4 rounded-pill me-2 mb-2 mb-sm-0 w-100 w-sm-auto">
+            註冊報名
+          </button>
+          <button class="btn btn-secondary px-4 rounded-pill w-100 w-sm-auto">立即登入</button>
         </div>
+      </div>
+
+      <button class="navbar-toggler order-1 order-sm-2 mb-2 mb-sm-0" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse order-3 order-lg-1" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">關卡資訊</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">攻略資源</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">求職專區</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
+
   <!-- <RouterLink to="/">Home</RouterLink> |
   <RouterLink to="/2324">Ho234me</RouterLink> |
   <RouterLink to="/about">About</RouterLink> -->
@@ -50,15 +62,15 @@ export default {
 </script>
 
 <style lang="scss" scope>
-.logo {
-  width: 100%;
-  max-width: 100%;
-  margin-right: 0;
-  @include media-sm() {
-    max-width: 180px;
-  }
-  @include media-md() {
-    max-width: 300px;
-  }
-}
+// .logo {
+//   width: 100%;
+//   max-width: 100%;
+//   margin-right: 0;
+//   @include media-sm() {
+//     max-width: 180px;
+//   }
+//   @include media-md() {
+//     max-width: 300px;
+//   }
+// }
 </style>

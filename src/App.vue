@@ -1,6 +1,6 @@
 <template>
   <div class="w-100 border">
-    <div class="container bg-warning-light border">
+    <div class="container border">
       <Navbar />
       <RouterView class="border" />
     </div>
